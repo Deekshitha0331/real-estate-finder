@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/real-estate-finder/static/css/main.56d123d1.css",
+    "main.js": "/real-estate-finder/static/js/main.24f03cc9.js",
+    "static/js/453.24e2f1a1.chunk.js": "/real-estate-finder/static/js/453.24e2f1a1.chunk.js",
+    "index.html": "/real-estate-finder/index.html",
+    "main.56d123d1.css.map": "/real-estate-finder/static/css/main.56d123d1.css.map",
+    "main.24f03cc9.js.map": "/real-estate-finder/static/js/main.24f03cc9.js.map",
+    "453.24e2f1a1.chunk.js.map": "/real-estate-finder/static/js/453.24e2f1a1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.56d123d1.css",
+    "static/js/main.24f03cc9.js"
+  ]
+}
