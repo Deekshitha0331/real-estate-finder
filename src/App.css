@@ -1,38 +1,288 @@
-.App {
+/* 🌍 Import Leaflet Map Styles */
+@import url('https://unpkg.com/leaflet/dist/leaflet.css');
+
+/* 🔷 Base App Container */
+.app-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: #b3e5fc;
+}
+
+/* 🏠 Home Page Card Style */
+.card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* 🔍 Search Page Container */
+.search-page {
+  height: 100vh;
+  background: #b3e5fc;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 100px;
+  padding-left: 40px;
+}
+
+/* 📐 Row Layouts */
+.search-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-section {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* 🍔 Hamburger Menu */
+.hamburger-container {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-left: 10px;
+}
+
+.hamburger-menu {
+  font-size: 20px;
+  padding: 6px;
+  margin-left: 20px;
+  margin-right: 35px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* 🔍 Search Bar */
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  padding: 8px 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 300px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.search-bar-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: transparent;
+  padding: 4px 6px;
+  min-width: 0;
+}
+
+.search-icon-btn {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0 6px;
+}
+
+/* ⬇️ Dropdown Filters */
+.dropdown-wrapper {
+  position: relative;
+  width: auto;
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+.select-type-margin {
+  margin-left: 10px;
+}
+
+.dropdown-toggle-btn {
+  background-color: #e8f5e9;
+  border: 1px solid #ccc;
+  color: #333;
+  font-size: 14px;
+  padding: 6px 10px;
+  width: auto;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.dropdown-toggle-btn.open {
+  background-color: #3cb371;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.dropdown-toggle-btn .arrow {
+  font-size: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dropdown-menu {
+  position: absolute;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 4px;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 0;
+  font-size: 14px;
+}
+
+.dropdown-icon-text {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+/* 💰 Price Range Styles */
+.price-section-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px 16px;
+  margin-bottom: 16px;
+}
+
+.custom-range-container {
+  margin-top: 16px;
+  border-top: 1px solid #ccc;
+  padding-top: 12px;
+}
+
+.custom-slider {
+  width: 100%;
+  margin: 12px 0;
+}
+
+.price-inputs {
+  display: flex;
+  gap: 12px;
+}
+
+.price-inputs input {
+  padding: 8px;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.price-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.price-actions button {
+  padding: 8px 16px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.price-actions .reset {
+  background-color: white;
+  border: 1px solid #333;
+}
+
+.price-actions .apply {
+  background-color: #333;
+  color: white;
+}
+
+/* 🗺️ About Page Layout */
+.about-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: #b3e5fc;
+}
+
+.left-panel {
+  width: 50%;
+  padding: 20px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.filters-row {
+  display: flex;
+  gap: 10px;
+}
+
+.map-panel {
+  width: 50%;
+  height: 100%;
+}
+
+/* 🖼️ Property Cards with Image Grid */
+.results-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.property-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.property-card:hover {
+  transform: translateY(-4px);
+}
+
+.property-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.property-card h4 {
+  font-size: 16px;
+  margin: 8px 0 4px;
+}
+
+.property-card p {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #333;
+}
+
+.property-card div {
+  padding: 10px;
 }

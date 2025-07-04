@@ -1,0 +1,31 @@
+/* 🍔 Hamburger Icon Styles */
+.hamburger {
+  font-size: 30px;           /* Large size for visibility */
+  cursor: pointer;           /* Pointer cursor on hover */
+  position: absolute;        /* Positioned relative to top-left corner */
+  top: 20px;
+  left: 20px;
+  z-index: 1000;             /* Ensure it's above other UI elements */
+  color: #333;               /* Dark gray color */
+}
+
+/* 📋 Sidebar Menu Container */
+.sidebar {
+  position: absolute;        /* Floating near hamburger icon */
+  top: 60px;                 /* Slightly below the hamburger */
+  left: 20px;
+  background: white;         /* White background */
+  padding: 20px;             /* Padding inside sidebar */
+  border-radius: 10px;       /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  /* Light shadow for depth */
+  display: flex;             /* Stack links vertically */
+  flex-direction: column;
+  gap: 10px;                 /* Space between links */
+}
+
+/* 🔗 Sidebar Links */
+.sidebar a {
+  text-decoration: none;     /* Remove underline */
+  color: #333;               /* Same dark gray as hamburger */
+  font-weight: bold;         /* Make links bold */
+}

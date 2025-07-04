@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "My Home Grava",
+    "location": "Kokapet",
+    "type": "Apartments",
+    "price": 52400000,
+    "latitude": 17.3835,
+    "longitude": 78.3611,
+    "image": "/images/grava.jpg"
+  },
+  {
+    "id": 2,
+    "title": "My Home Apas",
+    "location": "Kokapet",
+    "type": "Apartments",
+    "price": 26400000,
+    "latitude": 17.3845,
+    "longitude": 78.3632,
+    "image": "/images/apas.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Plot for Sale in Kokapet",
+    "location": "Kokapet",
+    "type": "Plots",
+    "price": 35000000,
+    "latitude": 17.3862,
+    "longitude": 78.3605,
+    "image": "/images/kokapet-plot.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Villa in Gandipet",
+    "location": "Gandipet",
+    "type": "Villas",
+    "price": 55000000,
+    "latitude": 17.3822,
+    "longitude": 78.3801,
+    "image": "/images/gandipet-villa.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Independent House in Gachibowli",
+    "location": "Gachibowli",
+    "type": "Independent House",
+    "price": 68000000,
+    "latitude": 17.4432,
+    "longitude": 78.3496,
+    "image": "/images/gachibowli-house.jpg"
+  }
+]
