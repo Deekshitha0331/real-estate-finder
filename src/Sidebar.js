@@ -1,6 +1,6 @@
 //  Sidebar.js
 import React, { useState } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Sidebar.css'; // External styles for sidebar
 
 function Sidebar() {
