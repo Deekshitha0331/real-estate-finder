@@ -13,9 +13,10 @@ function About() {
   const [results, setResults] = useState([]);
 
   useEffect(() => {
-    fetch('/properties.json')
+    fetch(process.env.PUBLIC_URL + '/properties.json')
       .then(res => res.json())
-      .then(data => setProperties(data));
+      .then(data => setProperties(data))
+      .catch(err => console.error("Failed to load properties:", err));
   }, []);
 
   const handleSearch = () => {
@@ -90,7 +91,7 @@ function About() {
                 }}
               >
                 <img
-                  src={property.image}
+                  src={process.env.PUBLIC_URL + property.image}
                   alt={property.title}
                   style={{
                     width: '100%',

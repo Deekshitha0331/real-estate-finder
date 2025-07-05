@@ -1,7 +1,7 @@
 {
   "name": "my-fancy-app",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://Deekshitha0331.github.io/real-estate-finder",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
