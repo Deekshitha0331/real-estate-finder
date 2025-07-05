@@ -1,10 +1,9 @@
 {
-  "name": "my-fancy-app",
+  "name": "real-estate-finder",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "homepage": "https://Deekshitha0331.github.io/real-estate-finder",
   "dependencies": {
-    "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
@@ -43,7 +42,6 @@
     ]
   },
   "devDependencies": {
-    "@types/leaflet": "^1.9.19",
     "gh-pages": "^6.3.0"
   }
 }

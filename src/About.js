@@ -44,7 +44,6 @@ function About() {
 
   return (
     <div className="about-container">
-      {/* Left Panel */}
       <div className="left-panel">
         <div className="search-row">
           <div className="hamburger-container">
@@ -73,7 +72,6 @@ function About() {
           </div>
         </div>
 
-        {/* Results */}
         <div style={{ marginTop: '20px' }}>
           <h3>Available Properties:</h3>
           <div className="results-list" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '16px' }}>
@@ -111,7 +109,6 @@ function About() {
         </div>
       </div>
 
-      {/* Right Panel */}
       <div className="map-panel">
         <MapComponent position={position} markers={results} />
       </div>
