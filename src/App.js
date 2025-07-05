@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'; // Routing setup
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Routing setup
 import About from './About';        // Importing the About page (search + map)
 import Sidebar from './Sidebar';    // Importing the Sidebar component
 
